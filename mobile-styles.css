@@ -1,0 +1,113 @@
+body {
+    background-color:  hsl(233, 47%, 7%);
+}
+
+div, p {
+    margin: 0; 
+}
+
+.layout, .card, .info {
+    display: flex; 
+}
+
+/*To properly align the card div*/
+.layout, .card {
+    align-items: center;
+}
+
+.card, .info {
+    flex-direction: column; 
+}
+
+.layout {
+    height: 904px; 
+    justify-content: center;
+}
+
+.card {
+    background-color: hsl(244, 38%, 16%);
+    width: 365px; 
+    height: 93%;
+    border-radius: 10px;  
+}
+
+.image, .cover {
+    width: 100%; 
+    border-radius: 10px 10px 0px 0px; 
+}
+
+/*div for the image and its adjustments*/
+.image {
+    background-image: url("./images/image-header-mobile.jpg");
+    background-size: cover;
+    height: 256px; 
+}
+
+/*To display a color over the image*/
+.cover {
+    background-color: rgba(110, 20, 167, 0.63);
+    height: 100%; 
+}
+
+.info {
+    width: 85%; 
+    height: 60%;
+    margin: auto; 
+    margin-top: 42px; 
+}
+
+.heading, .paragraph, .stats {
+    text-align: center; 
+}
+
+.heading, .num {
+    font-family: Inter, sans-serif; 
+}
+
+.heading {
+    color: hsl(0, 0%, 100%); 
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+}
+
+.accent {
+    color:  hsl(277, 64%, 61%); 
+}
+
+.paragraph, .type {
+    font-family: Lexend Deca, sans-serif; 
+}
+
+.paragraph {
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 17px; 
+    font-weight: 400; 
+    line-height: 25px;
+    margin-bottom: 45px; 
+}
+
+.sub {
+    margin-bottom: 20px;
+    line-height: 30px; 
+}
+
+.num {
+    color: hsl(0, 0%, 100%); 
+    font-size: 24px; 
+    font-weight: 700; 
+} 
+
+.type {
+    color: hsla(0, 0%, 100%, 0.6); 
+    font-size: 14px; 
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+

@@ -1,0 +1,125 @@
+body {
+    background-color: hsl(223, 47%, 7%); 
+}
+
+/*So it can be easier to space elements easily*/
+div, p {
+    margin: 0; 
+}
+
+/*Setting up elements that are flexboxes*/
+.layout, .card, .info, .stats, .substats{
+    display: flex; 
+}
+
+.layout, .info, .substats {
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.layout, .container {
+    width: 100%; 
+}
+
+/*laying out a flexbox so it can align the 
+flexbox for the card display*/
+.layout {
+    height: 909px;
+}
+
+.container, .card {
+    margin: auto; 
+}
+
+/*Creating the card as another flexbox 
+and setting the dimensions for it*/
+.card {
+    height: 475px; 
+    width: 1220px; 
+    border-radius: 10px;
+}
+
+.info, .substats, .image {
+    flex: 1; 
+}
+
+/*The first part of the card is a flexbox
+that contains the information*/
+.info { 
+    background-color: hsl(244, 38%, 16%); 
+    border-radius: 10px 0px 0px 10px; 
+}
+
+/*Within the flexbox contains a flexbox that is 
+meant to properly align the contents*/
+.container {
+    width: 75%; 
+    height: 70%;
+    margin-top: 75px;
+}
+
+.heading, .num {
+    font-family: Inter, sans-serif; 
+    font-weight: 700;
+}
+
+/*Setting up the main heading*/
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 38px; 
+    margin-bottom: 30px; 
+}
+
+.accent {
+    color: hsl(277, 64%, 61%); 
+}
+
+.paragraph, .sub {
+    font-family: Lexend Deca, sans-serif;
+    font-weight: 400; 
+}
+
+/*Setting up the main paragraph*/
+.paragraph {
+    width: 80%; 
+    color: hsla(0, 0%, 100%, 0.75); 
+    font-size: 15px;
+    line-height: 25px; 
+    margin-bottom: 80px; 
+}   
+
+/*Personalization for the stats section*/
+.num {
+    color: hsl(0, 0%, 100%); 
+    font-size: 24px; 
+    margin-bottom: 6px; 
+}
+
+.sub {
+    color: hsla(0, 0%, 100%, 0.6); 
+    font-size: 13px; 
+}
+
+.image, .cover {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.image {
+    background-image: url("./images/image-header-desktop.jpg"); 
+    background-size: cover;
+}
+
+/*A div put over the image for the color*/
+.cover {
+    height: 100%; 
+    background-color: rgba(110, 20, 167, 0.63);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+} 
+
